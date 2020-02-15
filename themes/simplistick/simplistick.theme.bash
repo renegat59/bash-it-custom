@@ -44,7 +44,7 @@ LAST_PROMPT=""
 function prompt_command() {
     local new_PS1="${white}> $(scm_prompt_info)${bold_cyan}$(scm_char)${yellow}$(ruby_version_prompt)${green}\w"
     local wrap_char="\n"
-    PS1="${new_PS1}${green}${wrap_char}%${reset_color} "
+    PS1="${new_PS1}${wrap_char}${green}%${reset_color} "
 }
 
 safe_append_prompt_command prompt_command
